@@ -1,0 +1,40 @@
+.header {
+  background-color: #fff8f2;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  &__actions-btn {
+    @extend %poppins-500;
+    line-height: 28px;
+    cursor: pointer;
+    background-color: transparent;
+    color: $orange;
+    margin-right: 36px;
+  }
+}
+
+.menu {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 48px;
+    }
+  }
+
+  &__link {
+    @extend %poppins-400;
+    color: $black;
+    line-height: 24px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}

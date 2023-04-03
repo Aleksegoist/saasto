@@ -1,23 +1,45 @@
-$accent: #fe3e57;
-$default: #8d8d8d;
-$title: #29282d;
+$default: #404040;
+$black: #1c0e0d;
+$dark-blue: #18063c;
+$white: #ffffff;
+$orange: #ff553e;
 
-%quicksand-400 {
-  font-family: 'Quicksand-Regular', sans-serif;
+%inter-400 {
+  font-family: 'Inter-Regular', sans-serif;
   font-weight: 400;
 }
 
-%quicksand-500 {
-  font-family: 'Quicksand-Medium', sans-serif;
+%inter-500 {
+  font-family: 'Inter-Medium', sans-serif;
   font-weight: 500;
 }
 
-%roboto-400 {
-  font-family: 'Roboto-Regular', sans-serif;
+%inter-600 {
+  font-family: 'Inter-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%inter-700 {
+  font-family: 'Inter-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%poppins-400 {
+  font-family: 'Poppins-Regular', sans-serif;
   font-weight: 400;
 }
 
-%roboto-700 {
-  font-family: 'Roboto-Bold', sans-serif;
+%poppins-500 {
+  font-family: 'Poppins-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%poppins-600 {
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
 }

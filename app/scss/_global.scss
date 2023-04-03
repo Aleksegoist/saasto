@@ -1,12 +1,40 @@
 body {
   color: $default;
-  font-size: 16px;
-  line-height: 26px;
-  @extend %quicksand-500;
+  font-size: 18px;
+  line-height: 36px;
+  @extend %inter-400;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.btn {
+  background-color: $orange;
+  @extend %poppins-500;
+  color: $white;
+  line-height: 28px;
+  padding: 16px 32px;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.title {
+  @extend %poppins-600;
+  font-size: 48px;
+  line-height: 70px;
+  color: $dark-blue;
+}
+
+.descr {
+  @extend %inter-400;
+  font-size: 20px;
+  color: $default;
 }

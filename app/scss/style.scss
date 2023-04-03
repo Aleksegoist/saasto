@@ -2,5 +2,7 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'colors';
 
-@import 'media';
+@import 'parts/header';
+@import 'parts/hero-section';

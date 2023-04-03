@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync');
+const ttf2woff2 = require('gulp-ttf2woff2');
 
 function browsersync() {
   browserSync.init({
@@ -14,6 +15,10 @@ function browsersync() {
     },
     notify: false,
   });
+}
+
+function convertFonts() {
+  return src('app/fonts/*.ttf').pipe(ttf2woff2()).pipe(dest('app/fonts/'));
 }
 
 function styles() {
@@ -75,6 +80,7 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.convertFonts = convertFonts;
 exports.build = series(cleanDist, images, build);
 
 exports.default = parallel(styles, scripts, browsersync, watching);

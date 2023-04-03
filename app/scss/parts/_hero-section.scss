@@ -1,0 +1,67 @@
+.hero {
+  padding: 220px 0 182px;
+  display: flex;
+  background-color: #fff8f2;
+  position: relative;
+
+  &__inner {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  &__title {
+    @extend %poppins-700;
+    font-size: 64px;
+    line-height: 90px;
+    color: $black;
+    margin-bottom: 24px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: -176px;
+      top: -94px;
+      width: 154px;
+      height: 170px;
+      background-image: url('../images/decor-hero/clock-hero.png');
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/decor-hero/vector1.png');
+      background-repeat: no-repeat;
+      width: 174px;
+      height: 121px;
+      left: -303px;
+      top: -119px;
+    }
+  }
+
+  &__descr {
+    display: inline-block;
+    max-width: 595px;
+    width: 100%;
+    margin-bottom: 68px;
+  }
+
+  &__btn {
+    padding: 24px 40px;
+  }
+
+  &__bg-left {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 503px;
+      height: 745px;
+      background-image: url('../images/decor-hero/mobile-screen-left.png');
+      background-repeat: no-repeat;
+      left: -522px;
+      top: 59px;
+    }
+  }
+}
